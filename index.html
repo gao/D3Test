@@ -21,6 +21,7 @@
 	<script type="text/javascript" src="js/jquery.tipsy.js"></script>
 		
 	<!-- Component JS Files -->
+	<script type="text/javascript" src="js/HelloWorld.js"></script>
 	<script type="text/javascript" src="js/Circle.js"></script>
 	<script type="text/javascript" src="js/AreaChart.js"></script>
 	<script type="text/javascript" src="js/LineChart.js"></script>
@@ -42,7 +43,10 @@
 				        <a class="brand" href="./index-nextgen.html">D3JS Demo</a>
 				        <div class="nav-collapse">
 			          		<ul class="nav">
-			          			<li class="nav-item active" data-section="Circle">
+			          			<li class="nav-item active" data-section="HelloWorld">
+					            	<a href="#">HelloWorld</a>
+								</li>
+			          			<li class="nav-item" data-section="Circle">
 					            	<a href="#">Circle</a>
 								</li>
 					            <li class="nav-item" data-section="AreaChart">
@@ -67,7 +71,7 @@
 		<script type="text/javascript">
 			$(function(){
 				var $this = $(this);
-				brite.display("Circle",{},{parent:$("#reports-container")});
+				brite.display("HelloWorld",{},{parent:$("#reports-container")});
 				$this.find(".nav-item").click(function(){
 					var $this = $(this);
 					var val = $this.attr("data-section");
@@ -77,7 +81,9 @@
 						$this.closest(".navbar").find("li").removeClass("active");
 						//add the class sel from the select one
 						$this.addClass("active");
-						if(val == "Circle"){
+						if(val == "HelloWorld"){
+							brite.display("HelloWorld",{},{parent:$("#reports-container")});
+						}else if(val == "Circle"){
 							brite.display("Circle",{},{parent:$("#reports-container")});
 						}else if(val == "AreaChart"){
 							brite.display("AreaChart",{},{parent:$("#reports-container")});
