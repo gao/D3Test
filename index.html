@@ -25,6 +25,7 @@
 	<script type="text/javascript" src="js/Circle.js"></script>
 	<script type="text/javascript" src="js/AreaChart.js"></script>
 	<script type="text/javascript" src="js/LineChart.js"></script>
+	<script type="text/javascript" src="js/Drag.js"></script>
 	<!-- /Component JS Files -->
 
 </head>
@@ -54,6 +55,9 @@
 								</li>
 					            <li class="nav-item" data-section="LineChart">
 					            	<a href="#">LineChart</a>
+								</li>
+								<li class="nav-item" data-section="Drag">
+					            	<a href="#">Drag</a>
 								</li>
 							</ul>
 			        	</div><!-- /.nav-collapse -->
@@ -89,6 +93,8 @@
 							brite.display("AreaChart",{},{parent:$("#reports-container")});
 						}else if(val == "LineChart"){
 							brite.display("LineChart",{},{parent:$("#reports-container")});
+						}else if(val == "Drag"){
+							brite.display("Drag",{},{parent:$("#reports-container")});
 						}
 					}
 				});

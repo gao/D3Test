@@ -1,0 +1,7 @@
+.AreaChart {
+	margin: 8px;
+}
+
+.AreaChart svg{
+	border: solid 1px #aaa;
+}

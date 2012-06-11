@@ -18,14 +18,13 @@ var smr = smr || {};
 		 d3.select(".HelloWorld")
 	      .style("width", "0%")
 	      .style("background-color", "steelblue")
-	      .text("hello\u00a0world")
+	      .text("hello world")
 	    .transition()
 	      .ease("bounce")
 	      .duration(2000)
 	      .style("width", "100%")
 	      .style("background-color", "brown");
 		 
-		 window.addEventListener("keypress", transform, false);
 	}
 	// --------- /Component Interface Implementation ---------- //
 	
